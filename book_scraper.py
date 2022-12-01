@@ -13,6 +13,7 @@ bookshelf = soup.findAll("li",
 book_title_collection = []
 for books in bookshelf: 
     book_title = books.h3.a['title']
-    book_title_collection.append(book_title)
+    book_price = books.div.p['price_color']
+    book_title_collection.extend([book_title], [book_price])
 print(book_title_collection)
     
