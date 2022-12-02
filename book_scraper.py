@@ -20,7 +20,8 @@ for books in bookshelf:
     book_price = book_prices[0].text.strip()
     book_ratings = soup.findAll('p', {'class':'star-rating'})
     for book_rating in (book_ratings):
-        book_ratings_stripped = book_rating.get('class')[i]
+        # checks only first element, update to inlcude all ratings
+        book_ratings_stripped = book_rating.get('class')[1]
     case = {'title':book_title, 'price':book_price, 'rating': book_ratings_stripped}
     book_title_collection.append(case)
 json_string = json.dumps(book_title_collection)
