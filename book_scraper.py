@@ -3,26 +3,20 @@ from bs4 import BeautifulSoup
 import json
 from word2number import w2n
 
-
 BASE_URL = 'https://books.toscrape.com/'
 
 page = requests.get(BASE_URL)
 
 soup = BeautifulSoup(page.content, "html.parser")
 
-bookshelf = soup.findAll("li",
-                      {"class": "col-xs-6 col-sm-4 col-md-3 col-lg-3"})
+books = soup.find_all('article')
+book_information_scraped = []
 
-book_title_collection = []
-for books in bookshelf: 
-    book_title = books.h3.a['title']
-    book_prices = soup.findAll('p', {'class':'price_color'})
-    book_price = book_prices[0].text.strip()
-    book_ratings = soup.findAll('p', {'class':'star-rating'})
-    for book_rating in (book_ratings):
-        # checks only first element, update to inlcude all ratings
-        book_ratings_stripped = book_rating.get('class')[1]
-    case = {'title':book_title, 'price':book_price, 'rating': book_ratings_stripped}
-    book_title_collection.append(case)
-json_string = json.dumps(book_title_collection)
+for book in books: 
+    book_title = book.h3.a['title']
+    book_price = book.find('p', class_='price_color').text
+    book_rating = book.find('p', class_='star-rating').attrs.get('class')[1]
+    case = {'title':book_title, 'price':book_price, 'rating': book_rating}
+    book_information_scraped.append(case)
+json_string = json.dumps(book_information_scraped)
 print(json_string)
