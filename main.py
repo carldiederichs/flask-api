@@ -15,6 +15,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 
 books = soup.find_all('article')
 book_information_scraped = []
+single_book_information = []
 
 @app.route('/book_info', methods = ['GET'])
 def book_info():
@@ -25,6 +26,22 @@ def book_info():
         case = {'title':book_title, 'price':book_price, 'rating': book_rating}
         book_information_scraped.append(case)
     return json.dumps(book_information_scraped)
+
+@app.route('/single_book_info/<title>', methods = ['GET', 'POST'])
+def single_book_info(title):
+    for i, book in enumerate(book_information_scraped):
+        if book['title'] == title:
+            return book_information_scraped[i]
+    return "Invalid Title"
+        
+    
+     
+    # for book_info in book_information_scraped:
+    #     if book_information_scraped.key == title: 
+    #         book_price = 
+        
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=8000)
