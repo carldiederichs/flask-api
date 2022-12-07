@@ -9,7 +9,6 @@ import eel
 import webbrowser
 from threading import Timer
 
-
 app = Flask(__name__)
 
 BASE_URL = 'https://books.toscrape.com/'
