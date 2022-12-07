@@ -4,6 +4,9 @@ from flask import request
 from bs4 import BeautifulSoup
 import json
 import requests
+from word2number import w2n
+import eel
+
 
 app = Flask(__name__)
 
@@ -23,25 +26,18 @@ def book_info():
         book_title = book.h3.a['title']
         book_price = book.find('p', class_='price_color').text
         book_rating = book.find('p', class_='star-rating').attrs.get('class')[1]
-        case = {'title':book_title, 'price':book_price, 'rating': book_rating}
+        book_rating_int = w2n.word_to_num(book_rating)
+        case = {'title':book_title, 'price':book_price, 'rating': book_rating_int}
         book_information_scraped.append(case)
     return json.dumps(book_information_scraped)
 
-@app.route('/single_book_info/<title>', methods = ['GET', 'POST'])
-def single_book_info(title):
+@app.route('/book_info_single/<title>', methods = ['GET', 'POST'])
+def book_info_single(title):
     for i, book in enumerate(book_information_scraped):
         if book['title'] == title:
             return book_information_scraped[i]
     return "Invalid Title"
-        
-    
-     
-    # for book_info in book_information_scraped:
-    #     if book_information_scraped.key == title: 
-    #         book_price = 
-        
-
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=8000)
+    
