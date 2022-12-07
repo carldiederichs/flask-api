@@ -6,6 +6,8 @@ import json
 import requests
 from word2number import w2n
 import eel
+import webbrowser
+from threading import Timer
 
 
 app = Flask(__name__)
@@ -38,6 +40,9 @@ def book_info_single(title):
             return book_information_scraped[i]
     return "Invalid Title"
 
+def open_browser():
+      webbrowser.open_new("http://127.0.0.1:8000/book_info")
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=8000)
-    
+    Timer(1, open_browser).start()
+    app.run(port=8000)
