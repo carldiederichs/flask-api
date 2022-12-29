@@ -16,6 +16,11 @@ single_book_information = []
 #assigns BASE_URL
 BASE_URL = "https://books.toscrape.com"
 
+@app.route('/')
+def hello_guys():
+    return '<h1>Hello from Flask-Docker!</h1>'
+
+
 #assigns flask endpoint
 @app.route('/book_info', methods = ['GET'])
 
@@ -51,11 +56,11 @@ def book_info_single(title):
     return "Invalid Title"
 
 #opens browser on specific port and runs first endpoint
-def open_browser():
-      webbrowser.open_new("http://127.0.0.1:8000/book_info")
+# def open_browser():
+#       webbrowser.open_new("http://127.0.0.1:8000")
 
 if __name__ == '__main__':
     
     #opens browser and defines port
-    Timer(1, open_browser).start()
-    app.run(port=8000, debug=True)
+    #Timer(1, open_browser).start()
+    app.run(debug=True)
