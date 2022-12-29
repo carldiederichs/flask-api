@@ -63,4 +63,4 @@ if __name__ == '__main__':
     
     #opens browser and defines port
     #Timer(1, open_browser).start()
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
