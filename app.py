@@ -17,7 +17,7 @@ single_book_information = []
 BASE_URL = "https://books.toscrape.com"
 
 @app.route('/')
-def hello_guys():
+def index():
     return '<h1>Hello from Flask-Docker!</h1>'
 
 
