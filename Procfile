@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser app.py
+web: gunicorn --bind 0.0.0.0:$PORT flaskapp:app
