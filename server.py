@@ -16,7 +16,7 @@ BASE_URL = "https://books.toscrape.com"
 
 @app.route('/', methods = ['GET'])
 def index_get():
-    return '<h1>Hello from Flask-Docker!</h1>'
+    return '<h1>Hello from Carl1-Docker!</h1>'
 
 
 #assigns flask endpoint
