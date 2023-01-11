@@ -16,7 +16,7 @@ BASE_URL = "https://books.toscrape.com"
 
 @app.route('/', methods = ['GET'])
 def index_get():
-    return '<h1>Hello from Flask-Docker!</h1>'
+    return '<h1>Hello from Carl-Docker!</h1>'
 
 
 #assigns flask endpoint
@@ -45,21 +45,14 @@ def book_info():
         page += 1
     return json.dumps(book_information_scraped)
 
-# #assigns flask endpoint
-# @app.route('/book_info_single/<title>', methods = ['GET', 'POST'])
-# def book_info_single(title):
-#     for book_details, book in enumerate(book_information_scraped):
-#         if book['title'] == title:
-#             return book_information_scraped[book_details]
-#     return "Invalid Title"
-
-#opens browser on specific port and runs first endpoint
-# def open_browser():
-#       webbrowser.open_new("http://127.0.0.1:8000")
+#assigns flask endpoint
+@app.route('/book_info_single/<title>', methods = ['GET', 'POST'])
+def book_info_single(title):
+    for book_details, book in enumerate(book_information_scraped):
+        if book['title'] == title:
+            return book_information_scraped[book_details]
+    return "Invalid Title"
 
 if __name__ == '__main__':
-    
-    #opens browser and defines port
-    #Timer(1, open_browser).start()
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
