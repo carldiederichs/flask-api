@@ -14,3 +14,5 @@ soupsieve==2.3.2.post1
 urllib3==1.26.13
 Werkzeug==2.2.2
 word2number==1.1
+Flask-Login==0.6.2
+flask_caching-2.0.2
