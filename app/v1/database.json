@@ -1,0 +1,362 @@
+[
+    {
+        "title": "A Light in the Attic",
+        "price": "\u00a351.77",
+        "rating": 3,
+        "id": "9b36f6cd-2860-4d8d-b252-32436c4bb2cb"
+    },
+    {
+        "title": "Tipping the Velvet",
+        "price": "\u00a353.74",
+        "rating": 1,
+        "id": "ed8ffded-70fd-4302-a510-2f9720fbfae2"
+    },
+    {
+        "title": "Soumission",
+        "price": "\u00a350.10",
+        "rating": 1,
+        "id": "165871a9-bf75-42c2-91db-05dd4a43be45"
+    },
+    {
+        "title": "Sharp Objects",
+        "price": "\u00a347.82",
+        "rating": 4,
+        "id": "ffc2cab4-db8c-4509-b763-be67f0880913"
+    },
+    {
+        "title": "Sapiens: A Brief History of Humankind",
+        "price": "\u00a354.23",
+        "rating": 5,
+        "id": "8e3273fb-c06f-4c86-8df8-dd231be2c50e"
+    },
+    {
+        "title": "The Requiem Red",
+        "price": "\u00a322.65",
+        "rating": 1,
+        "id": "443b64fb-3838-47b6-823f-fef09893662b"
+    },
+    {
+        "title": "The Dirty Little Secrets of Getting Your Dream Job",
+        "price": "\u00a333.34",
+        "rating": 4,
+        "id": "5fd13a85-ec74-42f1-b712-4e46d20351ad"
+    },
+    {
+        "title": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+        "price": "\u00a317.93",
+        "rating": 3,
+        "id": "20524b1e-ecfa-4125-9d5c-7de06df0159e"
+    },
+    {
+        "title": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+        "price": "\u00a322.60",
+        "rating": 4,
+        "id": "268eb4bf-0c91-44df-91d1-c9687026e398"
+    },
+    {
+        "title": "The Black Maria",
+        "price": "\u00a352.15",
+        "rating": 1,
+        "id": "18f0a9c2-5b2f-41b8-9041-74b5458f632a"
+    },
+    {
+        "title": "Starving Hearts (Triangular Trade Trilogy, #1)",
+        "price": "\u00a313.99",
+        "rating": 2,
+        "id": "8f1c7790-85cd-4940-a13a-d53cabc22d48"
+    },
+    {
+        "title": "Shakespeare's Sonnets",
+        "price": "\u00a320.66",
+        "rating": 4,
+        "id": "7e81d96d-d6e4-405e-bbfe-b2cdc23f25f4"
+    },
+    {
+        "title": "Set Me Free",
+        "price": "\u00a317.46",
+        "rating": 5,
+        "id": "f6930995-8dbc-44da-a4cb-5eb02519457e"
+    },
+    {
+        "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+        "price": "\u00a352.29",
+        "rating": 5,
+        "id": "72edf41d-84e6-4a2b-8ab6-8746aef14c58"
+    },
+    {
+        "title": "Rip it Up and Start Again",
+        "price": "\u00a335.02",
+        "rating": 5,
+        "id": "ac5250a8-dd2d-4ef8-a506-bea5b68952cd"
+    },
+    {
+        "title": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+        "price": "\u00a357.25",
+        "rating": 3,
+        "id": "078cf64a-7a5c-43dc-8680-52dcbf9baf10"
+    },
+    {
+        "title": "Olio",
+        "price": "\u00a323.88",
+        "rating": 1,
+        "id": "6a9dd06b-8518-48c6-95c3-3bf6bccdf4ae"
+    },
+    {
+        "title": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+        "price": "\u00a337.59",
+        "rating": 1,
+        "id": "c9192cb0-74af-4d67-a778-67ac75a379e4"
+    },
+    {
+        "title": "Libertarianism for Beginners",
+        "price": "\u00a351.33",
+        "rating": 2,
+        "id": "20dc3ba8-93ce-4e71-bc44-4bba23b38c19"
+    },
+    {
+        "title": "It's Only the Himalayas",
+        "price": "\u00a345.17",
+        "rating": 2,
+        "id": "7069de98-47ca-49ee-a1af-c25dd8a7f41d"
+    },
+    {
+        "title": "In Her Wake",
+        "price": "\u00a312.84",
+        "rating": 1,
+        "id": "6f854f2a-e6d1-4101-bb27-ecb9c84c4301"
+    },
+    {
+        "title": "How Music Works",
+        "price": "\u00a337.32",
+        "rating": 2,
+        "id": "2812cbbe-f4b0-4e9a-a3bb-a7afb8202232"
+    },
+    {
+        "title": "Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More",
+        "price": "\u00a330.52",
+        "rating": 3,
+        "id": "1647dae7-0c1f-4acd-8305-dccea766b2b6"
+    },
+    {
+        "title": "Chase Me (Paris Nights #2)",
+        "price": "\u00a325.27",
+        "rating": 5,
+        "id": "e0190d9c-496e-42f4-b7d1-7810ccb97d1a"
+    },
+    {
+        "title": "Black Dust",
+        "price": "\u00a334.53",
+        "rating": 5,
+        "id": "27d6e491-975a-4095-96c1-e592179b813c"
+    },
+    {
+        "title": "Birdsong: A Story in Pictures",
+        "price": "\u00a354.64",
+        "rating": 3,
+        "id": "a5eb4e36-996a-4303-ab6e-835859311cbb"
+    },
+    {
+        "title": "America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana",
+        "price": "\u00a322.50",
+        "rating": 3,
+        "id": "21ba5791-da6d-4a3c-b51c-78f805766a58"
+    },
+    {
+        "title": "Aladdin and His Wonderful Lamp",
+        "price": "\u00a353.13",
+        "rating": 3,
+        "id": "1a640b7b-8a44-4829-9b09-40016af1a42b"
+    },
+    {
+        "title": "Worlds Elsewhere: Journeys Around Shakespeare\u2019s Globe",
+        "price": "\u00a340.30",
+        "rating": 5,
+        "id": "fcb8c2e7-aa6c-476c-9030-8d07a4d0407d"
+    },
+    {
+        "title": "Wall and Piece",
+        "price": "\u00a344.18",
+        "rating": 4,
+        "id": "5ec89e28-6bab-4ce2-b718-741e73e11350"
+    },
+    {
+        "title": "The Four Agreements: A Practical Guide to Personal Freedom",
+        "price": "\u00a317.66",
+        "rating": 5,
+        "id": "5a9c9cf5-d979-4bdf-b8cd-c4176784ce1f"
+    },
+    {
+        "title": "The Five Love Languages: How to Express Heartfelt Commitment to Your Mate",
+        "price": "\u00a331.05",
+        "rating": 3,
+        "id": "9010acd8-82af-4ccd-8997-4593ccdd3496"
+    },
+    {
+        "title": "The Elephant Tree",
+        "price": "\u00a323.82",
+        "rating": 5,
+        "id": "374c5d58-4fa8-4e0a-942a-6cb6ee4be5b1"
+    },
+    {
+        "title": "The Bear and the Piano",
+        "price": "\u00a336.89",
+        "rating": 1,
+        "id": "897d4477-dc19-4be3-9417-5cad076f8971"
+    },
+    {
+        "title": "Sophie's World",
+        "price": "\u00a315.94",
+        "rating": 5,
+        "id": "36eeb624-f39d-4749-9eae-c71541d6c60c"
+    },
+    {
+        "title": "Penny Maybe",
+        "price": "\u00a333.29",
+        "rating": 3,
+        "id": "8fc8100d-9b44-4087-bfda-9f77e6482972"
+    },
+    {
+        "title": "Maude (1883-1993):She Grew Up with the country",
+        "price": "\u00a318.02",
+        "rating": 2,
+        "id": "8f62c6c3-9a5f-44d2-b00f-9d5224acf755"
+    },
+    {
+        "title": "In a Dark, Dark Wood",
+        "price": "\u00a319.63",
+        "rating": 1,
+        "id": "54e4f260-ee02-404b-b934-6abfbdc9ad15"
+    },
+    {
+        "title": "Behind Closed Doors",
+        "price": "\u00a352.22",
+        "rating": 4,
+        "id": "0c2d0a71-7011-4bd3-b1b0-704f198a783f"
+    },
+    {
+        "title": "You can't bury them all: Poems",
+        "price": "\u00a333.63",
+        "rating": 2,
+        "id": "c3c46f7d-9150-40cb-b948-55c23989e37f"
+    },
+    {
+        "title": "Slow States of Collapse: Poems",
+        "price": "\u00a357.31",
+        "rating": 3,
+        "id": "0014e51a-157e-4bd0-be5d-feb2c572a4ca"
+    },
+    {
+        "title": "Reasons to Stay Alive",
+        "price": "\u00a326.41",
+        "rating": 2,
+        "id": "55d94406-9889-435a-927f-1c556f2dd340"
+    },
+    {
+        "title": "Private Paris (Private #10)",
+        "price": "\u00a347.61",
+        "rating": 5,
+        "id": "74b79901-b2a5-4662-b3c8-83dfccaf0bb7"
+    },
+    {
+        "title": "#HigherSelfie: Wake Up Your Life. Free Your Soul. Find Your Tribe.",
+        "price": "\u00a323.11",
+        "rating": 5,
+        "id": "dd86c873-2645-425f-9994-940c4fea0ad9"
+    },
+    {
+        "title": "Without Borders (Wanderlove #1)",
+        "price": "\u00a345.07",
+        "rating": 2,
+        "id": "52bb8c02-d210-48d3-8043-7135510c37e0"
+    },
+    {
+        "title": "When We Collided",
+        "price": "\u00a331.77",
+        "rating": 1,
+        "id": "ba941b29-1d6d-4597-bc25-1fe43dc6382c"
+    },
+    {
+        "title": "We Love You, Charlie Freeman",
+        "price": "\u00a350.27",
+        "rating": 5,
+        "id": "97f29594-a58c-4f62-8396-05e58818e55d"
+    },
+    {
+        "title": "Untitled Collection: Sabbath Poems 2014",
+        "price": "\u00a314.27",
+        "rating": 4,
+        "id": "599e19fd-ce74-4622-9839-2ccbf060e6f1"
+    },
+    {
+        "title": "Unseen City: The Majesty of Pigeons, the Discreet Charm of Snails & Other Wonders of the Urban Wilderness",
+        "price": "\u00a344.18",
+        "rating": 4,
+        "id": "4d776805-c5fc-4df1-9efc-268c502f58e3"
+    },
+    {
+        "title": "Unicorn Tracks",
+        "price": "\u00a318.78",
+        "rating": 3,
+        "id": "5a798f5d-d0c2-416c-a38e-2280da2110dc"
+    },
+    {
+        "title": "Unbound: How Eight Technologies Made Us Human, Transformed Society, and Brought Our World to the Brink",
+        "price": "\u00a325.52",
+        "rating": 1,
+        "id": "e9dff330-2ffe-4d7a-b431-c033332d581d"
+    },
+    {
+        "title": "Tsubasa: WoRLD CHRoNiCLE 2 (Tsubasa WoRLD CHRoNiCLE #2)",
+        "price": "\u00a316.28",
+        "rating": 1,
+        "id": "292344b3-bf52-4b17-9da1-712bbd3a5658"
+    },
+    {
+        "title": "Throwing Rocks at the Google Bus: How Growth Became the Enemy of Prosperity",
+        "price": "\u00a331.12",
+        "rating": 3,
+        "id": "7f34e1c4-9d10-44d1-ba53-5181114ff214"
+    },
+    {
+        "title": "This One Summer",
+        "price": "\u00a319.49",
+        "rating": 4,
+        "id": "6259e52c-fb82-489c-b2ad-328eea8bda74"
+    },
+    {
+        "title": "Thirst",
+        "price": "\u00a317.27",
+        "rating": 5,
+        "id": "26c8ef2c-43f2-456a-98de-eb9886842ca4"
+    },
+    {
+        "title": "The Torch Is Passed: A Harding Family Story",
+        "price": "\u00a319.09",
+        "rating": 1,
+        "id": "25f5feb1-e8db-43e3-8bcf-b02db07792d4"
+    },
+    {
+        "title": "The Secret of Dreadwillow Carse",
+        "price": "\u00a356.13",
+        "rating": 1,
+        "id": "54d1dacb-4bf7-4d86-b5ca-1c5f731fe861"
+    },
+    {
+        "title": "The Pioneer Woman Cooks: Dinnertime: Comfort Classics, Freezer Food, 16-Minute Meals, and Other Delicious Ways to Solve Supper!",
+        "price": "\u00a356.41",
+        "rating": 1,
+        "id": "1ee073fd-d951-45ce-9c10-322967317ff4"
+    },
+    {
+        "title": "The Past Never Ends",
+        "price": "\u00a356.50",
+        "rating": 4,
+        "id": "51e7a655-f205-4554-9eb0-a7e28da9f26e"
+    },
+    {
+        "title": "The Natural History of Us (The Fine Art of Pretending #2)",
+        "price": "\u00a345.22",
+        "rating": 3,
+        "id": "2adf2512-d50f-491b-a5b4-7df000f3a963"
+    }
+]
