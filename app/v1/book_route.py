@@ -18,6 +18,9 @@ request_limit = 2
 rate_limit = RateLimiter(time_limit, request_limit) 
 scrape = Scraper()
 
+# assigns database file
+database_file = 'v1/database.json'
+
 #-----Flask Endpoints--------------------------------------------------------------------------------------------------------
 
 # sets route for index page
@@ -36,6 +39,9 @@ def books():
 
     # calls request_check method in the rate_limit object and returns the all_books function if request is allowed
     if rate_limit.request_check(username, ip_address):
+        scrape.scrape_books()
+        scrape.save_to_json(database_file)
+        scrape.read_json_file(database_file, database_file)
         return all_books()
     
     # updates last request time in the rate limiter dictionary if the request fails and displays error message
@@ -50,11 +56,55 @@ def books():
 
 # retrieves all books 
 def all_books():
-    scrape.scrape_books()
-    scrape.save_to_json('v1/database.json')
-    return scrape.read_json_file('v1/database.json', 'v1/database.json')
+    with open(database_file) as br: 
+        books = json.load(br)
+    return render_template('books.html', books=books)
 
-@app.route('/book/new')
-# @login_required
-def create_book():
-    return render_template('create_book.html', title='New Book')
+# adds book
+@app.route("/add_book", methods = ['GET','POST'])
+def add_book():
+    if request.method == 'GET':
+        return render_template("add_book.html", book = {})
+    if request.method == 'POST':
+        id = request.form["id"]
+        title = request.form["title"]
+        rating = request.form["rating"]
+        price = request.form["price"]
+        with open(database_file) as br:
+            books = json.load(br)
+        books.append({"id": id, "title": title, "rating": rating, "price": price})
+        with open(database_file, 'w') as bw:
+            json.dump(books, bw)
+        return redirect('/all_books')
+    
+# updates book
+@app.route('/update_book/<string:id>',methods = ['GET','POST'])
+def update_book(id):
+    with open(database_file) as br:
+        books = json.load(br)
+    if request.method == 'GET':
+        book = [x for x in books if x['id'] == id][0]
+        return render_template("add_book.html", book = book)
+    if request.method == 'POST':
+        for book in books:
+            if(book['id'] == id):
+                book['title'] = request.form["title"]
+                book['rating'] = request.form["rating"]
+                book['price'] = request.form["price"]
+                break
+        with open(database_file, 'w') as bw:
+            json.dump(books, bw)
+        return redirect('/all_books')
+    
+# deletes book
+@app.route('/delete_book/<string:id>')
+def delete_book(id):
+    with open(database_file) as br:
+        books = json.load(br)
+    newbooklist = []
+    for book in books:
+        if(book['id'] != id):
+            newbooklist.append(book)
+    with open(database_file, 'w') as bw:
+        json.dump(newbooklist, bw)
+    return redirect('/all_books')

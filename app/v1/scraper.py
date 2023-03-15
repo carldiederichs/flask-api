@@ -40,5 +40,5 @@ class Scraper:
         
         with open(filename, 'w') as f: 
             json.dump(database, f, indent=4)
-            return database
+            # return database
             
