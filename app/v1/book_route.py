@@ -1,18 +1,12 @@
-from flask import Flask, request, Response, redirect, jsonify
+from flask import Flask, request, Response, redirect, jsonify, render_template, url_for, flash, redirect
+from v1 import app
+from v1.rate_limiter import RateLimiter
+from v1.forms import RegistrationForm, LoginForm
+from v1.book_model import User, Book
+from datetime import timedelta
 from word2number import w2n
 from bs4 import BeautifulSoup as bfs
-from datetime import timedelta
-from rate_limiter import RateLimiter
-from flask_login import (LoginManager, 
-                         UserMixin, 
-                         current_user, 
-                         login_required,
-                         login_user, 
-                         logout_user)
-import os, json, requests as rq
-
-# initialises flask application
-app = Flask(__name__)
+import json, requests as rq
 
 # creates lists for book information
 book_information_scraped = []
@@ -31,7 +25,7 @@ time_limit = 30
 request_limit = 2
 
 # assigns rate limit to the Rate Limiter class with time limit and request limit as input arguments
-rate_limit = RateLimiter(time_limit, request_limit)  
+rate_limit = RateLimiter(time_limit, request_limit) 
 
 #-----Flask Endpoints--------------------------------------------------------------------------------------------------------
 
@@ -94,9 +88,3 @@ def book_info_single(title):
         if book['title'] == title:
             return book_information_scraped[book_details]
     return "Invalid Title"
-
-#-----Main Function----------------------------------------------------------------------------------------------------------
-
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
