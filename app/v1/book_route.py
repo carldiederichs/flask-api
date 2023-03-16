@@ -1,8 +1,6 @@
-from flask import Flask, request, Response, redirect, jsonify, render_template, url_for, flash, redirect
+from flask import request, redirect, jsonify, render_template, redirect
 from v1 import app
 from v1.rate_limiter import RateLimiter
-from v1.forms import RegistrationForm, LoginForm
-from v1.book_model import User, Book
 from v1.scraper import Scraper
 from datetime import timedelta
 import json
