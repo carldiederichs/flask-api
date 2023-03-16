@@ -72,7 +72,7 @@ def add_book():
             books = json.load(br)
         books.append({"id": id, "title": title, "rating": rating, "price": price})
         with open(database_file, 'w') as bw:
-            json.dump(books, bw)
+            json.dump(books, bw, indent=4)
         return redirect('/all_books')
     
 # updates book
@@ -91,7 +91,7 @@ def update_book(id):
                 book['price'] = request.form["price"]
                 break
         with open(database_file, 'w') as bw:
-            json.dump(books, bw)
+            json.dump(books, bw, indent=4)
         return redirect('/all_books')
     
 # deletes book
@@ -104,5 +104,5 @@ def delete_book(id):
         if(book['id'] != id):
             newbooklist.append(book)
     with open(database_file, 'w') as bw:
-        json.dump(newbooklist, bw)
+        json.dump(newbooklist, bw, indent=4)
     return redirect('/all_books')
